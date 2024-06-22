@@ -6,7 +6,7 @@
   
   <div class="progress-bar">
     {#each $segments as segment}
-      <div class="segment" style="width: {segment.distance / totalDistance * 100}%;">
+      <div class="segment" style="width: {segment.distance / totalDistance * 100}%; background-color: {segment.color};">
         {segment.distance}m
       </div>
     {/each}
@@ -17,13 +17,17 @@
       display: flex;
       height: 30px;
       background-color: #eee;
+      border-radius: 5px;
+      overflow: hidden;
+      margin-top: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
   
     .segment {
-      background-color: #ca9679;
-      border: 1px solid #2f1c;
       text-align: center;
       line-height: 30px;
+      color: #fff;
+      font-weight: bold;
     }
   </style>
   
