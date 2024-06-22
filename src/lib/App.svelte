@@ -1,12 +1,14 @@
 <script>
     import SegmentManager from './SegmentManager.svelte';
     import ProgressBar from './ProgressBar.svelte';
+    import PlaylistGenerator from './PlaylistGenerator.svelte';
   </script>
   
   <main>
     <h1>Rowing Piece Planner</h1>
     <SegmentManager />
     <ProgressBar />
+    <PlaylistGenerator />
   </main>
   
   <style>
